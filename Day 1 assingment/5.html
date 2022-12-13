@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>
+            function AddNumber(){
+                let number1 = parseInt(document.getElementById("input1").value);
+                let number2 = parseInt(document.getElementById("input2").value);
+
+                alert("The sum of entered: "+ (number1+number2));
+            }
+        </script>
+    </head>
+    <body>
+        First Assignment sum of input<hr/>
+        <Label>Enter a first number</Label>
+        <input id=input1 type="string" placeholder="Enter a number"/>
+        <hr/>
+        <Label>Enter a second number</Label>
+        <input id=input2 type="string" placeholder="Enter a number"/>
+
+        <input type="submit" value="Add" onclick="AddNumber()"/>
+        
+    </body>
+</html>

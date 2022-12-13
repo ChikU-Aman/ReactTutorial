@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script>
+            var testString = "This is test string aman and it is open umbrella";
+
+            const vowelArr=['a','e','i','o','u'];
+
+            const countVowel = vowelArr.map(function(n){
+                let count = 0;
+                for (let index = 0; index < testString.length; index++) {
+                    
+                    if(testString[index].toLowerCase() == n.toLowerCase()){
+
+                        count+=1;
+                    }
+                }
+                console.log(n, count);
+            });
+            
+        </script>
+    </head>
+    <body>
+        First Assignment vowel count
+        
+    </body>
+</html>

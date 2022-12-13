@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>
+            function validateEmail(){
+                let email = document.getElementById("email").value;
+                
+                var mailFormat = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+                if(email.match(mailFormat)){
+                    console.log("Email valid")
+                }
+                else{
+                    console.log("invalid email");
+                }
+            }
+            
+        </script>
+    </head>
+    <body>
+        Please Enter Email to Validate<hr/>
+        <input id="email" type="text" placeholder="Enter the email" onblur="validateEmail()"/>
+    </body>
+</html>

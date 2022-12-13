@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script>
+            function isArmstrongNumber(){
+                let number = parseInt(document.getElementById("input").value);
+                let result = 0;
+                let temp = number;
+
+                while(temp!=0){
+                    let remainder = temp % 10;
+                    result+=remainder*remainder*remainder;
+
+                    temp = parseInt(temp/10);
+                }
+                if(result == number){
+                    console.log(number+ " is Armstrong");
+                }
+                else{
+                    console.log(number+ " is not Armstrong");   
+                }
+                
+            }
+        </script>
+    </head>
+    <body>
+        First Assignment input is armstrong
+        <hr/>
+        <Label>Enter a number to check</Label>
+        <input id=input type="string" placeholder="Enter a number" onblur="isArmstrongNumber()"/>
+    </body>
+</html>
