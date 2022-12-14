@@ -7,6 +7,7 @@
         <input type="text" id="printScreen"/>
         <table>
             <tbody>
+                
                 <tr>
                     <td><button onclick="buttonEvent('7')">7</button></td>
                     <td><button onclick="buttonEvent('8')" >8</button></td>
@@ -27,6 +28,7 @@
                 </tr>
                 <tr>
                     <td><button onclick="buttonEvent('c')">Cl</button></td>
+                    <td><button onclick="buttonEvent('/')">/</button></td>
                     <td><button onclick="buttonEvent('0')">0</button></td>
                     <td><button onclick="buttonEvent('.')">.</button></td>
                     <td><button onclick="buttonEvent('=')">=</button></td>
@@ -40,24 +42,30 @@
         let tempData = '';
         function buttonEvent(buttonListner){
             if(buttonListner == '='){
-                displayScreen.value = eval(tempData);
+                displayScreen.value = eval(displayScreen.value);
             }
             else if(buttonListner == 'x'){
-                displayScreen.value = tempData; 
+               
+                displayScreen.value = eval(displayScreen.value);
+                displayScreen.value  += '*';
             }
             else if(buttonListner == '+'){
-                tempData = tempData !=null ? tempData + parseFloat(displayScreen.value) : tempData = displayScreen.value;
-                displayScreen.value = null;
+                
+                displayScreen.value = eval(displayScreen.value);
+                displayScreen.value  += buttonListner;
             }
             else if(buttonListner == '-'){
-                tempData = tempData !=null ? tempData - parseFloat(displayScreen.value) : tempData = displayScreen.value;
-                displayScreen.value = null;
+                
+                displayScreen.value = eval(displayScreen.value);
+                displayScreen.value  += buttonListner;
             }
             else if(buttonListner == '/'){
-                tempData = tempData !=null ? tempData / parseFloat(displayScreen.value) : tempData = displayScreen.value;
-                displayScreen.value = null;
+                
+                displayScreen.value = eval(displayScreen.value);
+                displayScreen.value  += buttonListner;
             }
             else if(buttonListner == 'c'){
+                displayScreen.value = "";
                 
             }
             else{
