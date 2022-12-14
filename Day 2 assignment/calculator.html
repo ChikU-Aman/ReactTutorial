@@ -1,0 +1,68 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1> --- Calculator --- </h1>
+        <input type="text" id="printScreen"/>
+        <table>
+            <tbody>
+                <tr>
+                    <td><button onclick="buttonEvent('7')">7</button></td>
+                    <td><button onclick="buttonEvent('8')" >8</button></td>
+                    <td><button onclick="buttonEvent('9')">9</button></td>
+                    <td><button onclick="buttonEvent('x')">X</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="buttonEvent('4')">4</button></td>
+                    <td><button onclick="buttonEvent('5')">5</button></td>
+                    <td><button onclick="buttonEvent('6')">6</button></td>
+                    <td><button onclick="buttonEvent('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="buttonEvent('1')">1</button></td>
+                    <td><button onclick="buttonEvent('2')">2</button></td>
+                    <td><button onclick="buttonEvent('3')">3</button></td>
+                    <td><button onclick="buttonEvent('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="buttonEvent('c')">Cl</button></td>
+                    <td><button onclick="buttonEvent('0')">0</button></td>
+                    <td><button onclick="buttonEvent('.')">.</button></td>
+                    <td><button onclick="buttonEvent('=')">=</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+    <script>
+        let displayScreen = document.getElementById("printScreen");
+        displayScreen.value = "";
+        let tempData = '';
+        function buttonEvent(buttonListner){
+            if(buttonListner == '='){
+                displayScreen.value = eval(tempData);
+            }
+            else if(buttonListner == 'x'){
+                displayScreen.value = tempData; 
+            }
+            else if(buttonListner == '+'){
+                tempData = tempData !=null ? tempData + parseFloat(displayScreen.value) : tempData = displayScreen.value;
+                displayScreen.value = null;
+            }
+            else if(buttonListner == '-'){
+                tempData = tempData !=null ? tempData - parseFloat(displayScreen.value) : tempData = displayScreen.value;
+                displayScreen.value = null;
+            }
+            else if(buttonListner == '/'){
+                tempData = tempData !=null ? tempData / parseFloat(displayScreen.value) : tempData = displayScreen.value;
+                displayScreen.value = null;
+            }
+            else if(buttonListner == 'c'){
+                
+            }
+            else{
+                displayScreen.value += buttonListner;
+            }
+        }
+    </script>
+</html>

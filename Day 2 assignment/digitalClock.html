@@ -1,0 +1,33 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1 id="displayClock"></h1>
+
+        <script>
+            setInterval(displayTime,1000);
+            function displayTime(){
+                let time = new Date();
+                let hour = time.getHours();
+                let min = time.getMinutes();
+                let sec = time.getSeconds();
+
+                let timeSet = "AM";
+
+                if(hour > 12){
+                    hour-=12;
+                    timeSet = "PM";
+                }
+                if(hour ==0){
+                    timeSet="AM";
+                }
+
+                document.getElementById("displayClock").innerHTML = hour + ":" + min + ":" + sec + " " + timeSet;
+
+                
+            }
+            displayTime();
+        </script>
+    </body>
+</html>
