@@ -64,7 +64,7 @@ const AddBookDetails = () => {
             <Form.Group className="mb-4" controlId="formBasicCheckbox">
                 <Form.Label style={{marginLeft:"20px"}}>Genre :</Form.Label>
                 <Form.Select style={{marginLeft:"20px",width:"60%"}} name="genre" value={book.genre} onChange={changeHandler}>
-                    <option value="">Select Genre :</option>
+                    <option value=""> --- Select Genre --- </option>
                     {genreColl.map((genre) => {
                         return <option value={genre}>{genre}</option>
                     })}
