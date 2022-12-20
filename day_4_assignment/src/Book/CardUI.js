@@ -10,7 +10,7 @@ const CardUI = (props) => {
     }
 
     return (
-        <Card style={{ width: '18rem', marginLeft: "10px" }}>
+        <Card style={{ width: '18rem', marginLeft: "10px",marginTop:"25px" }}>
             <Card.Body style={{ boxShadow: "10px 10px 10px grey" }}>
                 <Card.Text style={{ display: "flex", justifyContent: "center", fontSize: "30px" }}>
                     {props.card.title}

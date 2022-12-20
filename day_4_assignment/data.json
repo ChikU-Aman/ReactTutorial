@@ -34,6 +34,13 @@
       "genre": "Medical thriller",
       "summary": "checlk",
       "id": 1005
+    },
+    {
+      "title": "Avatar",
+      "author": "Aman Singh",
+      "genre": "Mystery thriller",
+      "summary": "a vfx movie",
+      "id": 1006
     }
   ],
   "genre": [

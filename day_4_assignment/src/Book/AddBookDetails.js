@@ -1,8 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { useNavigate } from 'react-router-dom';
+
 
 const AddBookDetails = () => {
+
+    const navigate = useNavigate();
+
     const [book, setBook] = useState({ "title": "", "author": "", "genre": "", "summary": "", "id": 0 });
 
     const [genreColl, setGenreColl] = useState([]);
@@ -24,7 +29,9 @@ const AddBookDetails = () => {
         })
             .then((response) => response.json())
             .then((data) => {
-                console.log(data);
+
+                navigate("/card")
+                //console.log(data);
                 // Handle data
             })
             .catch((err) => {

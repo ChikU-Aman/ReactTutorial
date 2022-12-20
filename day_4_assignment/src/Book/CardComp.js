@@ -15,8 +15,6 @@ const CardComp = () => {
 
     }
 
-
-
     useEffect(() => {
         fetchBooks();
     }, []);
@@ -29,7 +27,7 @@ const CardComp = () => {
 
         <div>
             <h1 style={{display:"flex",justifyContent:"flex-end",color:"#009AD5",marginRight:"100px"}}>Catalog</h1>
-            <div style={{ display: "flex" }}>
+            <div style={{ display: "flex",flexWrap:"wrap" }}>
                 {books.map((element) => {
                     return <CardUI card={element} />
                     // return <Card style={{ width: '18rem', marginLeft: "10px" }}>
