@@ -1,0 +1,45 @@
+{
+  "books": [
+    {
+      "title": "Origins",
+      "author": "Dan Brown",
+      "genre": "Medical thriller",
+      "summary": "The fifth installment in the Robert Langdon series",
+      "id": 1001
+    },
+    {
+      "title": "Crisis",
+      "author": "Robin Cook",
+      "genre": "Mystery thriller",
+      "summary": "The terrifying story of a doctor who is the victim of a medical malpractise crisis",
+      "id": 1002
+    },
+    {
+      "title": "aman",
+      "author": "singh",
+      "genre": "",
+      "summary": "sadsad",
+      "id": 1003
+    },
+    {
+      "title": "sadsad",
+      "author": "sadsad",
+      "genre": "Medical thriller",
+      "summary": "dasd",
+      "id": 1004
+    },
+    {
+      "title": "mradul",
+      "author": "mardaul",
+      "genre": "Medical thriller",
+      "summary": "checlk",
+      "id": 1005
+    }
+  ],
+  "genre": [
+    "Mystery thriller",
+    "Medical thriller",
+    "Action",
+    "hj"
+  ]
+}
