@@ -1,0 +1,14 @@
+{
+  "todos": [
+    {
+      "task": "learn python",
+      "isDone": true,
+      "id": 5
+    },
+    {
+      "task": "use reducer",
+      "isDone": true,
+      "id": 7
+    }
+  ]
+}
