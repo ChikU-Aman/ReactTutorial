@@ -1,0 +1,40 @@
+{
+    "Users": [
+      {
+        "UserId":1001,
+        "Username": "Aman",
+        "Password": "123",
+        "Role": "User"
+      },
+      {
+        "UserId":1002,
+        "Username": "Singh",
+        "Password": "123",
+        "Role": "User"
+      },
+      {
+        "UserId":1003,
+        "Username": "Admin",
+        "Password": "admin",
+        "Role": "Admin"
+      }
+    ],
+    "Defect":[
+      {
+        "DefectId":1,
+        "DefectCategory":"UI",
+        "DefectPriority":"1",
+        "UserIdDefect":1001,
+        "DefectDescription":"abc",
+        "Status":"Open"
+      },
+      {
+        "DefectId":2,
+        "DefectCategory":"Functional",
+        "DefectPriority":"2",
+        "UserIdDefect":1002,
+        "DefectDescription":"xyz",
+        "Status":"Open"
+      }
+    ]
+  }
