@@ -14,6 +14,8 @@ const Header = () => {
         setUsername(AuthenticationService.getLoggedInUser()==""?"Login":AuthenticationService.getLoggedInUser());
     }
 
+    const userId = AuthenticationService.getLoggedInUserId();
+
     const clickHandler = () =>{
         if(AuthenticationService.getLoggedInUser()!=null){
             AuthenticationService.logoutUser();
@@ -33,8 +35,8 @@ const Header = () => {
                 <Container>
                     <Navbar.Brand href="dashboard">Defects Tracker</Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link href="AddDefect">Add Defects </Nav.Link>
-                        <Nav.Link href="dashboard">View My Defects</Nav.Link>
+                        {userId!="1003" && <Nav.Link href="AddDefect">Add Defects </Nav.Link> }
+                        {userId=="1003"?<Nav.Link href="dashboard">View All Defects</Nav.Link>:<Nav.Link href="dashboard">View My Defects</Nav.Link>}
                     </Nav>
                     <Navbar.Collapse className="justify-content-end">
                         <Navbar.Text>

@@ -24,8 +24,19 @@ const AuthenticationService = {
         }
     },
 
+    getLoggedInUserId:function(){
+        let userId = sessionStorage.getItem('authenticatedUserId');
+        if(userId!=null){
+            return userId;
+        }
+        else{
+            return "";
+        }
+    },
+
     logoutUser:function(){
         sessionStorage.setItem('authenticatedUser','');
+        sessionStorage.setItem('authenticatedUserId','');
     }
 }
 
