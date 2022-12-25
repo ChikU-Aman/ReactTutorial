@@ -50,7 +50,7 @@ const Dashboard = () => {
         }
         else {
             defect.map((d) => {
-                if (d.DefectCategory == e.target.value) {
+                if (d.DefectPriority == e.target.value) {
                     count = count + 1;
                     serviceDefect.push(d);
                 }
@@ -140,8 +140,8 @@ const Dashboard = () => {
                                     <td>{d.DefectDescription}</td>
                                     <td>{d.DefectPriority}</td>
                                     <td>{d.Status}</td>
-                                    {userId == "1003" ? <td><button onClick={(e) => closeClickHandler(e, d)} type="button">Close Defect</button></td> :
-                                        <td><button onClick={(e) => deleteClickHandler(e, d)} type="button">Delete</button></td>}
+                                    {userId == "1003" ? <td><button onClick={(e) => closeClickHandler(e, d)} type="button">{d.Status=="Open"?"Close":"No Action Pending"}</button></td> :
+                                        <td><button onClick={(e) => deleteClickHandler(e, d)} type="button">{d.Status=="Open"?"Delete":"Completed"}</button></td>}
 
                                 </tr>
                             }

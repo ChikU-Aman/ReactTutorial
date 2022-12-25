@@ -21,12 +21,12 @@
   ],
   "Defect": [
     {
-      "id": 3,
       "DefectCategory": "Functional",
       "DefectPriority": "2",
       "UserIdDefect": "1002",
       "DefectDescription": "install vs",
-      "Status": "Open"
+      "Status": "Closed",
+      "id": 3
     },
     {
       "id": 4,
