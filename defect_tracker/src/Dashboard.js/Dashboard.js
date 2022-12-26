@@ -103,7 +103,7 @@ const Dashboard = () => {
                 <div style={{ display: "flex" }}>
                     <p style={{ marginRight: "100px" }}>Priority</p>
                     <select onChange={(e) => priorityChangeHandler(e)}>
-                        <option value="All">Select Priority to filter</option>
+                        <option value="All">All</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>

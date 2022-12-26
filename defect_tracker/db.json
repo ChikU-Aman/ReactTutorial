@@ -29,20 +29,28 @@
       "id": 3
     },
     {
-      "id": 4,
       "DefectCategory": "Change Request",
       "DefectPriority": "2",
       "UserIdDefect": "1002",
       "DefectDescription": "install bluetooth",
+      "Status": "Closed",
+      "id": 4
+    },
+    {
+      "id": 6,
+      "DefectCategory": "Change Request",
+      "DefectPriority": "3",
+      "UserIdDefect": "1002",
+      "DefectDescription": "Hard drive need to change",
       "Status": "Open"
     },
     {
-      "id": 5,
-      "DefectCategory": "UI",
-      "DefectPriority": "2",
+      "DefectCategory": "Change Request",
+      "DefectPriority": "1",
       "UserIdDefect": "1001",
-      "DefectDescription": "Please create html",
-      "Status": "Open"
+      "DefectDescription": "install usb",
+      "Status": "Closed",
+      "id": 7
     }
   ]
 }
